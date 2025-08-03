@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 21</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<audio id="myAudio">
+  <source src="music/phirkabhi.mp3" type="audio/mpeg">
+  <source src="music/phirkabhi.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+
+
+    <div class="carousel">
+        <div class="carousel-item">
+            <div class="carousel-box">
+                <div class="hi">Hi👋</br>Beta !</div>
+                <img src="./photo/1.jpg" />
+                
+            </div>
+        </div>
+    
+        <div class="carousel-item">
+            <div class="carousel-box">
+                <div class="want">Please Keep<br>Dragging Madam😊</div>
+                <div class="mm">Mm,</div>
+                <img src="./photo/2.jpg" />
+            </div>
+        </div>
+    
+        <div class="carousel-item">
+            <div class="carousel-box">
+                <div class="title">Happiest Birthday My Girl 🎊🎂</div>
+                <img src="./photo/4.jpg" />
+            </div>
+        </div>
+    
+        <div class="carousel-item">
+            <div class="carousel-box">
+                <div class="title">Today Is A Very Special Day😁</div>
+                
+                <img src="./photo/5.jpg" />
+            </div>
+        </div>
+
+    <div class="carousel-item">
+        <div class="carousel-box">
+            <div class="title">May God Bless You and Fulfil Your All Wishes & Dreams❤️</div>
+           
+            <img src="./photo/6.jpg" />
+        </div>
+    </div>
+       
+    
+        <div class="carousel-item">
+            <div class="carousel-box">
+                <div class="title">I Pray that You Always Stay Strong, Happy and Healthy🥰</div>
+               
+                <img src="./photo/8.jpg" />
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-box">
+                <div class="title">You’re not just Pretty — you’re Pure Magic, Inside and Out 💫</div>
+
+               
+                <img src="./photo/9.jpg" />
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-box">
+            <div class="title">You're Genuinely one of the Sweetest Souls I’ve ever Met 😊</div>
+                <img src="./photo/7.jpg" />
+            </div>
+        </div>
+    
+        <div class="carousel-item">
+            <div class="carousel-box">
+        <div class="title">When You’re Happy, Everything just feels Right 😊<br>Also, Having You Around Is Truly a Blessing 😇 </div>
+                
+                <img src="./photo/3.jpg" />
+            </div>
+        </div>
+    
+        <div class="carousel-item">
+            <div class="carousel-box">
+             <div class="title">I'm Always Here for You 💛<br>You Mean A Lot to Me, My little Strawberry 🍓</div>
+
+                
+                <img src="./photo/10.jpg" />
+            </div>
+        </div>
+    
+        
+        <div class="carousel-item">
+            <div class="carousel-box"><div class="title">Oi Choti Bcchi 💁‍♀️, Tum sirf Dost? Naah… Darling ho Mera 😉</div>
+
+
+               
+                <img src="./photo/12.jpg" />
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-box">
+                <div class="title">Once Again Happy Birthday Beta🎊🎂</div>
+                
+                <img src="./photo/11.jpg" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="layout">
+        <div class="box">TERI SOORAT SE HAI AALAM MEIN BAHAARON KO SABAAT,<br />TERI AANKHON KE SIVA DUNIYA MEIN RAKHA KYA HAI.......</div>
+    </div>
+    
+    
+   
+    
+    <div class="cursor"></div>
+    <div class="cursor cursor2"></div>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById("myAudio");
+
+    const enableAudio = () => {
+        audio.play()
+            .then(() => {
+                console.log("Audio started after user interaction.");
+            })
+            .catch((err) => {
+                console.error("Audio failed to play:", err);
+            });
+
+        document.removeEventListener('click', enableAudio);
+        document.removeEventListener('touchstart', enableAudio);
+    };
+
+    // Wait for any user gesture
+    document.addEventListener('click', enableAudio);
+    document.addEventListener('touchstart', enableAudio);
+});
+</script>
+
+
+    <!-- partial -->
+      <script  src="./script.js"></script>
+</body>
